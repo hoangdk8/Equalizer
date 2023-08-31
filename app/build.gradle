@@ -31,8 +31,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
     buildFeatures {
         viewBinding true
@@ -69,10 +69,14 @@ android {
             buildConfigField "String", "openApp_resume", ""
         }
     }
+    namespace 'com.mobiai'
 
 }
 
 dependencies {
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-media-compat:28.0.0'
+    
 
     implementation platform('com.google.firebase:firebase-bom:31.2.2')
 
@@ -105,6 +109,7 @@ dependencies {
     //sdp. ssp
     implementation 'com.intuit.sdp:sdp-android:1.1.0'
     implementation 'com.intuit.ssp:ssp-android:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     //font
 //    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'

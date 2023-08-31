@@ -13,6 +13,7 @@
 
         >
         <ImageView
+            android:id="@+id/back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -28,81 +29,84 @@
             android:textStyle="bold"
             />
     </LinearLayout>
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:layout_marginTop="50dp"
-    >
-
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="20dp"
-    >
-
-<ImageView
-    android:layout_width="100dp"
-    android:layout_height="100dp"
-    android:src="@drawable/normal"
-    android:background="@drawable/round_mode"
-    />
-    <TextView
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Normal"
         android:layout_gravity="center"
-        android:textSize="20sp"
-        android:textColor="@color/white"
-        />
-</LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="20dp"
+        android:layout_marginTop="50dp"
         >
 
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/classical"
-            android:background="@drawable/round_mode"
-            />
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Classical"
-            android:layout_gravity="center"
-            android:textSize="20sp"
-            android:textColor="@color/white"
-            />
-    </LinearLayout>
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="20dp"
-        >
-
-        <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/dance"
-            android:background="@drawable/round_mode"
-            />
-        <TextView
+            <ImageView
+                android:id="@+id/mode_normal"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/normal"
+                android:background="@drawable/round_mode"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Normal"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Dance"
-            android:layout_gravity="center"
-            android:textSize="20sp"
-            android:textColor="@color/white"
-            />
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+
+            <ImageView
+                android:id="@+id/mode_classical"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/classical"
+                android:background="@drawable/round_mode"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Classical"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+
+            <ImageView
+                android:id="@+id/mode_dance"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/dance"
+                android:background="@drawable/round_mode"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dance"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -111,10 +115,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp"
+            android:padding="15dp"
             >
 
             <ImageView
+                android:id="@+id/mode_pop"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/pop"
@@ -133,10 +138,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp"
+            android:padding="15dp"
             >
 
             <ImageView
+                android:id="@+id/mode_folk"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/folk"
@@ -155,10 +161,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp"
+            android:padding="15dp"
             >
 
             <ImageView
+                android:id="@+id/mode_hiphop"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/hiphop"
@@ -184,10 +191,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp"
+            android:padding="15dp"
             >
 
             <ImageView
+                android:id="@+id/mode_jazz"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/jazz"
@@ -206,10 +214,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp"
+            android:padding="15dp"
             >
 
             <ImageView
+                android:id="@+id/mode_rock"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/rook"
@@ -228,14 +237,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="20dp"
+            android:padding="15dp"
             >
 
             <ImageView
+                android:id="@+id/mode_native"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@drawable/native_music"
-                android:background="@drawable/round_mode"
                 />
             <TextView
                 android:layout_width="wrap_content"

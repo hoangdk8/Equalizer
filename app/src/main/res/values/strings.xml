@@ -13,4 +13,6 @@
     <string name="language_france" translatable="false">Francais</string>
     <string name="language_china" translatable="false">中国人</string>
     <string name="languages">Languages</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
